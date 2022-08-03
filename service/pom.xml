@@ -18,7 +18,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.atguigu</groupId>
+            <groupId>com.kuang</groupId>
             <artifactId>service_base</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

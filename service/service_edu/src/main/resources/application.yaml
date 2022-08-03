@@ -1,0 +1,18 @@
+server:
+  port: 8110
+#配置数据库
+spring:
+  profiles:
+    active: dev
+  application:
+    name: service-edu
+  datasource:
+    username: root
+    password: Kuang001102
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://180.76.100.158:3306/mybatis_plus?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+#配置日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
