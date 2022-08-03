@@ -10,9 +10,15 @@ spring:
     username: root
     password: Kuang001102
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://180.76.100.158:3306/mybatis_plus?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://180.76.100.158:3306/teach_online_edu?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
 #配置日志
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-
+#logging:
+#  level:
+#    root: ERROR
