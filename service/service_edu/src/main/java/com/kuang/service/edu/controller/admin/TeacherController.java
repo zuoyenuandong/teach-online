@@ -23,12 +23,14 @@ import java.util.List;
  * @author Kuang
  * @since 2022-08-03
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/admin/edu/teacher")
 @Api("讲师后台管理系统")
 public class TeacherController {
     @Autowired
     private TeacherService teacherService;
+
     @ApiOperation(value = "查询所有的讲师")
     @GetMapping("/list")
     public R listAll(){
@@ -48,13 +50,13 @@ public class TeacherController {
     @ApiOperation(value = "讲师分页列表")
     @GetMapping("/list/{page}/{limit}")
     public R listPage(@ApiParam("当前页码") @PathVariable("page") Long page,
-                      @ApiParam("当前页码") @PathVariable("limit") Long limit,
+                      @ApiParam("每页条数") @PathVariable("limit") Long limit,
                       @ApiParam("讲师列表查询对象")TeacherQueryVo teacherQueryVo){
         Page<Teacher> pageParam = new Page<>(page,limit);
         IPage<Teacher> pageModel = teacherService.selectPage(pageParam, teacherQueryVo);
         List<Teacher> records = pageModel.getRecords();
         long total = pageModel.getTotal();
-        return R.ok().data("total",total).data("total",total).data("rows",records);
+        return R.ok().data("total",total).data("rows",records);
     }
 
     @ApiOperation(value = "新增讲师")
