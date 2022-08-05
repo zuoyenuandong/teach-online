@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.kuang.common.base.result.R;
 import com.kuang.service.edu.entity.Teacher;
 import com.kuang.service.edu.entity.ov.TeacherQueryVo;
+import com.kuang.service.edu.feign.OssFileService;
 import com.kuang.service.edu.service.TeacherService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -31,6 +32,9 @@ public class TeacherController {
     @Autowired
     private TeacherService teacherService;
 
+    @Autowired
+    private OssFileService ossFileService;
+
     @ApiOperation(value = "查询所有的讲师")
     @GetMapping("/list")
     public R listAll(){
@@ -40,6 +44,7 @@ public class TeacherController {
     @ApiOperation(value = "根据id删除讲师")
     @DeleteMapping("/remove/{id}")
     public R removeById(@PathVariable("id") String id){
+        teacherService.removeAvatarById(id);
         boolean result =  teacherService.removeById(id);
         if (result){
             return R.ok().message("删除成功");
@@ -88,6 +93,31 @@ public class TeacherController {
         }else {
             return R.error().message("数据不存在");
         }
+    }
+    @ApiOperation(value = "根据id列表删除讲师")
+    @DeleteMapping("/banch-remove")
+    public R removeRows(
+            @ApiParam(value = "删除讲师id列表",required = true)
+            @RequestBody List<String> idList){
+        boolean result =  teacherService.removeByIds(idList);
+        if (result){
+            return R.ok().message("删除成功");
+        }else {
+            return R.error().message("删除失败");
+        }
+    }
+
+    @ApiOperation(value = "测试")
+    @GetMapping("/test")
+    public R test(){
+        ossFileService.test();
+        return R.ok();
+    }
+
+    @ApiOperation(value = "测试并发")
+    @GetMapping("/testCurrent")
+    public R testCurrent(){
+        return R.ok();
     }
 
 

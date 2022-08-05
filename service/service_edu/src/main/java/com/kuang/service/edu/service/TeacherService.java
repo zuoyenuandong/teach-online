@@ -17,4 +17,6 @@ import com.kuang.service.edu.entity.ov.TeacherQueryVo;
 public interface TeacherService extends IService<Teacher> {
 
     IPage<Teacher> selectPage(Page<Teacher> pageParam, TeacherQueryVo teacherQueryVo);
+
+    Boolean removeAvatarById(String id);
 }

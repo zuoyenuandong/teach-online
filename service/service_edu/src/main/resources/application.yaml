@@ -1,5 +1,7 @@
 server:
   port: 8110
+  tomcat:
+    max-threads: 10
 #配置数据库
 spring:
   profiles:
@@ -11,14 +13,25 @@ spring:
     password: Kuang001102
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://180.76.100.158:3306/teach_online_edu?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        port: 8081 #跟控制台交流的端口，随意指定
+        dashboard: localhost:8080
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
 
-#配置日志
+ribbon:
+  MaxAutoRetries: 0 #同一实例最大重试次数
+  MaxAutoRetriesNextServer: 1 #其他实例重试次数
+  ConnectTimeout: 10000 #建立连接超时时常，默认1s
+  ReadTimeout: 10000  #请求处理超时时常，默认1s
+
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-#logging:
-#  level:
-#    root: ERROR
+

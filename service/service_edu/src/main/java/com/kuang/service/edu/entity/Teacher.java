@@ -48,7 +48,7 @@ public class Teacher extends BaseEntity {
     private Integer sort;
 
     @ApiModelProperty(value = "入驻时间")
-    @JsonFormat(timezone = "GTM+8",pattern = "yyyy-MM-dd    ")
+    @JsonFormat(timezone = "GTM+8",pattern = "yyyy-MM-dd")
     private Date joinDate;
 
     @ApiModelProperty(value = "逻辑删除 1（true）已删除， 0（false）未删除")

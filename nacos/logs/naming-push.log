@@ -1,0 +1,82 @@
+2022-08-05 20:13:31,456 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 20:13:37,930 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-08-05 20:14:13,148 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 20:14:17,562 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-08-05 20:25:26,100 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 20:25:32,349 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 20:25:47,453 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 20:32:12,810 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 20:32:19,463 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-08-05 20:32:24,752 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-08-05 20:32:39,763 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-08-05 20:39:43,970 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 20:39:43,978 INFO serviceName: DEFAULT_GROUP@@service-oss changed, schedule push for: 192.168.43.144:49383, agent: Nacos-Java-Client:v1.1.1, key: 192.168.43.144,49383,43239011409000
+
+2022-08-05 20:39:43,978 INFO send udp packet: 192.168.43.144,49383,43239011409000
+
+2022-08-05 20:39:43,983 INFO received ack: {"type": "push-ack", "lastRefTime":"43239011409000", "data":""} from: 192.168.43.144:49383, cost: 5 ms, unacked: 0, total push: 1
+
+2022-08-05 20:39:53,152 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 20:39:53,164 INFO serviceName: DEFAULT_GROUP@@service-oss changed, schedule push for: 192.168.43.144:49383, agent: Nacos-Java-Client:v1.1.1, key: 192.168.43.144,49383,43248193518000
+
+2022-08-05 20:39:53,164 INFO send udp packet: 192.168.43.144,49383,43248193518000
+
+2022-08-05 20:39:53,174 INFO received ack: {"type": "push-ack", "lastRefTime":"43248193518000", "data":""} from: 192.168.43.144:49383, cost: 10 ms, unacked: 0, total push: 2
+
+2022-08-05 20:52:34,912 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 20:52:34,912 INFO serviceName: DEFAULT_GROUP@@service-oss changed, schedule push for: 192.168.43.144:49383, agent: Nacos-Java-Client:v1.1.1, key: 192.168.43.144,49383,44009953586200
+
+2022-08-05 20:52:34,912 INFO send udp packet: 192.168.43.144,49383,44009953586200
+
+2022-08-05 20:52:34,918 INFO received ack: {"type": "push-ack", "lastRefTime":"44009953586200", "data":""} from: 192.168.43.144:49383, cost: 6 ms, unacked: 0, total push: 3
+
+2022-08-05 20:52:49,932 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 20:52:49,932 INFO serviceName: DEFAULT_GROUP@@service-oss changed, schedule push for: 192.168.43.144:49383, agent: Nacos-Java-Client:v1.1.1, key: 192.168.43.144,49383,44024974243600
+
+2022-08-05 20:52:49,932 INFO send udp packet: 192.168.43.144,49383,44024974243600
+
+2022-08-05 20:52:49,938 INFO received ack: {"type": "push-ack", "lastRefTime":"44024974243600", "data":""} from: 192.168.43.144:49383, cost: 6 ms, unacked: 0, total push: 4
+
+2022-08-05 21:12:16,186 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 21:12:16,186 INFO serviceName: DEFAULT_GROUP@@service-oss changed, schedule push for: 192.168.43.144:49383, agent: Nacos-Java-Client:v1.1.1, key: 192.168.43.144,49383,45191228010300
+
+2022-08-05 21:12:16,186 INFO send udp packet: 192.168.43.144,49383,45191228010300
+
+2022-08-05 21:12:16,187 INFO received ack: {"type": "push-ack", "lastRefTime":"45191228010300", "data":""} from: 192.168.43.144:49383, cost: 1 ms, unacked: 0, total push: 5
+
+2022-08-05 21:40:30,463 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 21:40:36,291 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-08-05 21:49:23,163 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-08-05 22:02:42,132 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-08-05 22:42:00,008 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-08-05 22:42:02,905 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 23:17:28,262 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 23:17:30,048 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
+2022-08-05 23:17:43,294 INFO DEFAULT_GROUP@@service-oss is changed, add it to push queue.
+
+2022-08-05 23:17:45,077 INFO DEFAULT_GROUP@@service-edu is changed, add it to push queue.
+
