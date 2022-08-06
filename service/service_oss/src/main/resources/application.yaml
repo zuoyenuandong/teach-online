@@ -25,8 +25,8 @@ spring:
 #阿里云oss配置
 aliyun:
   oss:
-    endpoint: oss-cn-hangzhou.aliyuncs.com
-    bucketname: kuang-bucket01
-    keyid: LTAI5tQYgPLWkK1x9C3whLB2
-    keysecret: UctJ90vZ0YYgdXi2N84fUYLRWDNTsC
+    endpoint: *****
+    bucketname: *****
+    keyid: *****
+    keysecret: *****
 
