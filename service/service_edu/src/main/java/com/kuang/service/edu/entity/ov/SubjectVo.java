@@ -14,6 +14,6 @@ public class SubjectVo implements Serializable {
     private String id;
     private String title;
     private Integer sort;
-
+    //子节点
     private List<SubjectVo> children = new ArrayList<>();
 }
