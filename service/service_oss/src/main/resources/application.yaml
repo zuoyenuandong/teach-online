@@ -10,18 +10,18 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
-    sentinel:
-      transport:
-        port: 8081 #跟控制台交流的端口，随意指定
-        dashboard: localhost:8080
+#    sentinel:
+#      transport:
+#        port: 8081 #跟控制台交流的端口，随意指定
+#        dashboard: localhost:8080
   servlet:
     multipart:
       max-file-size: 10MB
       max-request-size: 20MB
 #openfeign配置sentinel
-feign:
-  sentinel:
-    enabled: true
+#feign:
+#  sentinel:
+#    enabled: true
 #阿里云oss配置
 aliyun:
   oss:

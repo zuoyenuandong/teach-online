@@ -1,82 +1,150 @@
-2022-08-05 20:13:30,438 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.100:8120:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-08-06 00:27:48,610 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.144:8110:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-08-05 20:13:30,442 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.0.100:8120_true,
+2022-08-06 00:27:48,610 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:13:30,448 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.0.100:8120_true,
+2022-08-06 00:27:48,611 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:13:36,923 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.0.100:8110:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-08-06 00:47:40,530 INFO {POS} {IP-DISABLED} valid: 192.168.43.144:8110@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1659718045001
 
-2022-08-05 20:13:36,923 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.0.100:8110_true,
+2022-08-06 00:47:48,375 ERROR [UPDATE-DOMAIN] Exception while taking item from LinkedBlockingDeque.
 
-2022-08-05 20:13:36,926 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.0.100:8110_true,
+2022-08-06 09:27:21,354 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.144:8110:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-08-05 20:14:12,133 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.0.100:8120_true,
+2022-08-06 09:27:21,361 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:14:16,558 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.0.100:8110_true,
+2022-08-06 09:27:21,364 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:25:25,099 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.144:8120:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-08-06 09:27:21,365 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:25:25,099 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,192.168.0.100:8120_true,
+2022-08-06 09:27:21,365 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:25:25,099 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,192.168.0.100:8120_true,
+2022-08-06 09:27:21,608 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.144:8120:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2022-08-05 20:25:31,347 INFO {POS} {IP-DISABLED} valid: 192.168.0.100:8120@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1659702313643
+2022-08-06 09:27:21,608 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,
 
-2022-08-05 20:25:46,442 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.100:8120:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2022-08-06 09:27:21,608 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,
 
-2022-08-05 20:25:46,442 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,
+2022-08-06 09:27:21,608 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,
 
-2022-08-05 20:32:11,795 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,
+2022-08-06 09:27:21,609 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,
 
-2022-08-05 20:32:18,453 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.144:8110:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-08-06 10:05:15,055 INFO {POS} {IP-DISABLED} valid: 192.168.43.144:8110@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1659751498978
 
-2022-08-05 20:32:18,453 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,192.168.0.100:8110_true,
+2022-08-06 10:05:21,888 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.43.144:8110@DEFAULT, region: unknown, msg: client beat ok
 
-2022-08-05 20:32:18,453 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,192.168.0.100:8110_true,
+2022-08-06 10:05:21,888 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:32:23,737 INFO {POS} {IP-DISABLED} valid: 192.168.0.100:8110@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1659702724114
+2022-08-06 10:05:21,888 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:32:38,760 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.0.100:8110:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2022-08-06 10:08:35,073 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:32:38,760 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+2022-08-06 10:08:35,073 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:39:42,967 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,
+2022-08-06 10:11:02,482 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:39:52,149 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.144:8121:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2022-08-06 10:11:02,482 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:39:52,149 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8121_true,192.168.43.144:8120_true,
+2022-08-06 11:00:15,718 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:39:52,150 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8121_true,192.168.43.144:8120_true,
+2022-08-06 11:00:15,718 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:52:33,898 INFO {POS} {IP-DISABLED} valid: 192.168.43.144:8121@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1659703938805
+2022-08-06 11:15:51,825 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:52:48,925 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.43.144:8121:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2022-08-06 11:15:51,825 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 20:52:48,925 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,
+2022-08-06 11:23:02,975 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 21:12:15,173 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,
+2022-08-06 11:23:02,975 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 21:40:29,457 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,
+2022-08-06 11:24:53,525 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 21:40:35,276 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+2022-08-06 11:24:53,526 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 21:49:22,162 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+2022-08-06 11:26:43,278 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 22:02:41,119 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+2022-08-06 11:26:43,279 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 22:41:58,995 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+2022-08-06 11:29:41,571 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 22:42:01,889 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.43.144:8120_true,
+2022-08-06 11:29:41,571 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 23:17:27,246 INFO {POS} {IP-DISABLED} valid: 192.168.43.144:8120@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1659712629598
+2022-08-06 11:31:26,212 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 23:17:29,046 INFO {POS} {IP-DISABLED} valid: 192.168.43.144:8110@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1659712631652
+2022-08-06 11:31:26,212 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 23:17:42,282 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.43.144:8120:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2022-08-06 11:36:27,444 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 23:17:42,282 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+2022-08-06 11:36:27,444 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 23:17:44,073 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.43.144:8110:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2022-08-06 13:33:24,512 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 
-2022-08-05 23:17:44,073 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+2022-08-06 13:33:24,512 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:35:49,139 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:35:49,139 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:37:07,929 INFO {POS} {IP-DISABLED} valid: 192.168.43.144:8110@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1659764209275
+
+2022-08-06 13:37:23,028 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.43.144:8110:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-08-06 13:37:23,028 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-08-06 13:37:23,029 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-08-06 13:38:30,631 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.144:8110:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-06 13:38:30,631 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:38:30,631 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:38:30,631 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:38:30,631 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:42:56,539 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:42:56,539 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:44:39,972 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:44:39,972 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:55:50,631 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:55:50,632 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:57:17,298 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:57:17,298 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:58:00,015 INFO {POS} {IP-DISABLED} valid: 192.168.43.144:8110@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1659765462380
+
+2022-08-06 13:58:15,035 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.43.144:8110:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2022-08-06 13:58:15,035 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-08-06 13:58:15,035 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2022-08-06 13:58:54,782 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.144:8110:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-06 13:58:54,782 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:58:54,782 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:58:54,782 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:58:54,782 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:59:38,251 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 13:59:38,251 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 14:38:55,646 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.43.144:8110:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2022-08-06 14:38:55,655 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 14:39:09,909 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
+
+2022-08-06 14:46:55,651 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.43.144:8110_true,
 

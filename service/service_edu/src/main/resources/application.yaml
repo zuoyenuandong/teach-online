@@ -17,10 +17,10 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
-    sentinel:
-      transport:
-        port: 8081 #跟控制台交流的端口，随意指定
-        dashboard: localhost:8080
+#    sentinel:
+#      transport:
+#        port: 8081 #跟控制台交流的端口，随意指定
+#        dashboard: localhost:8080
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
@@ -33,5 +33,7 @@ ribbon:
 
 mybatis-plus:
   configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/kuang/service/edu/mapper/xml/*.xml
 

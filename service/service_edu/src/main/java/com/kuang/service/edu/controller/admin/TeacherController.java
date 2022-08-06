@@ -24,10 +24,10 @@ import java.util.List;
  * @author Kuang
  * @since 2022-08-03
  */
-@CrossOrigin
-@RestController
-@RequestMapping("/admin/edu/teacher")
-@Api("讲师后台管理系统")
+    @CrossOrigin
+    @RestController
+    @RequestMapping("/admin/edu/teacher")
+    @Api("讲师后台管理系统")
 public class TeacherController {
     @Autowired
     private TeacherService teacherService;
