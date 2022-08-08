@@ -2,6 +2,7 @@ package com.kuang.service.edu.mapper;
 
 import com.kuang.service.edu.entity.Video;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author Kuang
  * @since 2022-08-03
  */
+@Repository
 public interface VideoMapper extends BaseMapper<Video> {
 
 }

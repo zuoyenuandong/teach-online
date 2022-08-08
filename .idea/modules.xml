@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/common/service_base/service_base.iml" filepath="$PROJECT_DIR$/common/service_base/service_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service_edu/service_edu.iml" filepath="$PROJECT_DIR$/service/service_edu/service_edu.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service_oss/service_oss.iml" filepath="$PROJECT_DIR$/service/service_oss/service_oss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service_vod/service_vod.iml" filepath="$PROJECT_DIR$/service/service_vod/service_vod.iml" />
       <module fileurl="file://$PROJECT_DIR$/teach_online_parent.iml" filepath="$PROJECT_DIR$/teach_online_parent.iml" />
     </modules>
   </component>

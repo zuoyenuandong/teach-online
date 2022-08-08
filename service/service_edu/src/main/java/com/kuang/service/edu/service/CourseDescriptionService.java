@@ -11,6 +11,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author Kuang
  * @since 2022-08-03
  */
+
 public interface CourseDescriptionService extends IService<CourseDescription> {
 
 }

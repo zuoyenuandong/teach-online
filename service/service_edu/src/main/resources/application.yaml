@@ -10,9 +10,9 @@ spring:
     name: service-edu
   datasource:
     username: root
-    password: Kuang001102
+    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://180.76.100.158:3306/teach_online_edu?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/teach_online_edu?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
   cloud:
     nacos:
       discovery:
@@ -34,6 +34,6 @@ ribbon:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
-    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   mapper-locations: classpath:com/kuang/service/edu/mapper/xml/*.xml
 

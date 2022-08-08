@@ -8,13 +8,16 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class BaseEntity {
+@Accessors(chain = true)
+public class BaseEntity implements Serializable {
 
     @ApiModelProperty(value = "讲师ID")
     @TableId(value = "id", type = IdType.ASSIGN_ID)

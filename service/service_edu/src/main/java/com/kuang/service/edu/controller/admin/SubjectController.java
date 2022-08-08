@@ -28,7 +28,7 @@ import java.util.List;
 @CrossOrigin
 @RestController
 @RequestMapping("/admin/edu/subject")
-@Api("课程分类管理")
+@Api(description ="课程分类管理")
 public class SubjectController {
     @Autowired
     SubjectService subjectService;
