@@ -25,8 +25,8 @@ spring:
 #阿里云oss配置
 aliyun:
   vod:
-    keyid: LTAI5tQYgPLWkK1x9C3whLB2
-    keysecret: UctJ90vZ0YYgdXi2N84fUYLRWDNTsC
-    templateGroupId: VOD_NO_TRANSCODE
+    keyid: *******
+    keysecret: ********
+    templateGroupId: ******
 #    workflowId: 222
 
