@@ -1,0 +1,52 @@
+server:
+  port: 8160
+  tomcat:
+    max-threads: 10
+#配置数据库
+spring:
+  profiles:
+    active: dev
+  application:
+    name: service-ucenter
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/teach_online_ucenter?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  redis:
+    host: 180.76.100.158
+    port: 6379
+    database: 0
+    password: Kuang001102 #默认为空
+    lettuce:
+      pool:
+        max-active: 20  #最大连接数，负值表示没有限制，默认8
+        max-wait: -1    #最大阻塞等待时间，负值表示没限制，默认-1
+        max-idle: 8     #最大空闲连接，默认8
+        min-idle: 0     #最小空闲连接，默认0
+#    sentinel:
+#      transport:
+#        port: 8081 #跟控制台交流的端口，随意指定
+#        dashboard: localhost:8080
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/kuang/service/ucenter/mapper/xml/*.xml
+
+wx:
+  open:
+    # 微信开放平台 appid
+    appId: wxed9954c01bb89b47
+    # 微信开放平台 appsecret
+    appSecret: a7482517235173ddb4083788de60b90e
+    # 微信开放平台 重定向url（guli.shop需要在微信开放平台配置）
+    redirectUri: http://localhost:8160/api/ucenter/wx/callback

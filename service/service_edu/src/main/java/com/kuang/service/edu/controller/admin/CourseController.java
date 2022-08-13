@@ -11,6 +11,7 @@ import com.kuang.service.edu.entity.ov.CourseQueryVo;
 import com.kuang.service.edu.entity.ov.CourseVo;
 import com.kuang.service.edu.service.CourseDescriptionService;
 import com.kuang.service.edu.service.CourseService;
+import com.kuang.service.edu.service.VideoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -28,7 +29,7 @@ import java.util.List;
  * @author Kuang
  * @since 2022-08-03
  */
-@CrossOrigin //允许跨域
+
 @Api(description = "课程管理")
 @RestController
 @RequestMapping("/admin/edu/course")
@@ -36,6 +37,9 @@ import java.util.List;
 public class CourseController {
     @Autowired
     private CourseService courseService;
+
+    @Autowired
+    private VideoService videoService;
 
 
 
@@ -92,7 +96,7 @@ public class CourseController {
         //删除课程封面
         courseService.removeCoverById(id);
         //删除课程视频
-
+        videoService.removeVideoByCourseId(id);
         //删除课程
         boolean result = courseService.removeCourseById(id);
 

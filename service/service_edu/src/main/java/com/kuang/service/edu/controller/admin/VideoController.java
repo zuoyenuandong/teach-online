@@ -2,13 +2,19 @@ package com.kuang.service.edu.controller.admin;
 
 
 import com.kuang.common.base.result.R;
+import com.kuang.common.base.result.ResultCodeEnum;
+import com.kuang.common.base.util.ExceptionUtils;
+import com.kuang.service.base.exception.MyException;
 import com.kuang.service.edu.entity.Video;
+import com.kuang.service.edu.feign.VodVideoService;
 import com.kuang.service.edu.service.VideoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * <p>
@@ -18,13 +24,15 @@ import org.springframework.web.bind.annotation.*;
  * @author Kuang
  * @since 2022-08-03
  */
-@CrossOrigin
+
 @Api(description = "课时管理")
 @RestController
 @RequestMapping("/admin/edu/video")
 public class VideoController {
     @Autowired
     private VideoService videoService;
+
+
 
     @ApiOperation("新增课时")
     @PostMapping("/save")
@@ -73,8 +81,9 @@ public class VideoController {
             @ApiParam(value = "课时ID", required = true)
             @PathVariable String id){
 
-        //TODO 删除视频：VOD
+        //删除视频：VOD
         //在此处调用vod中的删除视频文件的接口
+        videoService.removeVideoById(id);
 
         boolean result = videoService.removeById(id);
         if (result) {
@@ -83,5 +92,6 @@ public class VideoController {
             return R.error().message("数据不存在");
         }
     }
+
 }
 

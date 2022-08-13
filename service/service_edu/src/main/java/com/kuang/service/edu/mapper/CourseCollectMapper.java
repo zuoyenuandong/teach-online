@@ -2,7 +2,10 @@ package com.kuang.service.edu.mapper;
 
 import com.kuang.service.edu.entity.CourseCollect;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.kuang.service.edu.entity.ov.CourseCollectVo;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * <p>
@@ -15,4 +18,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CourseCollectMapper extends BaseMapper<CourseCollect> {
 
+    List<CourseCollectVo> selectPageByMemberId(String memberId);
 }

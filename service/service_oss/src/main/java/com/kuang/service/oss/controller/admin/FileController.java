@@ -18,7 +18,7 @@ import java.io.InputStream;
 import java.nio.channels.MulticastChannel;
 
 @Api(description = "阿里云文件管理")
-@CrossOrigin
+//@CrossOrigin
 @RestController
 @RequestMapping("/admin/oss/file")
 @Slf4j

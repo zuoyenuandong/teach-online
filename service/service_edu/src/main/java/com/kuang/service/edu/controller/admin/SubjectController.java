@@ -25,7 +25,7 @@ import java.util.List;
  * @author Kuang
  * @since 2022-08-03
  */
-@CrossOrigin
+
 @RestController
 @RequestMapping("/admin/edu/subject")
 @Api(description ="课程分类管理")

@@ -15,9 +15,10 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 @RestController
-@CrossOrigin
+//@CrossOrigin
 @RequestMapping("/admin/vod/video")
 @Api(description = "阿里云视频点播")
 @Slf4j
@@ -38,4 +39,35 @@ public class VideoController {
             throw new MyException(ResultCodeEnum.VIDEO_UPLOAD_TOMCAT_ERROR);
         }
     }
+
+    @DeleteMapping("remove/{vodId}")
+    public R removeVideo(
+            @ApiParam(value="阿里云视频id", required = true)
+            @PathVariable String vodId){
+
+        try {
+            videoService.removeVideo(vodId);
+            return R.ok().message("视频删除成功");
+        } catch (Exception e) {
+            log.error(ExceptionUtils.getMessage(e));
+            throw new MyException(ResultCodeEnum.VIDEO_DELETE_ALIYUN_ERROR);
+        }
+    }
+
+    @DeleteMapping("remove")
+    public R removeVideoByIdList(
+            @ApiParam(value = "阿里云视频id列表", required = true)
+            @RequestBody List<String> videoIdList){
+
+        try {
+            videoService.removeVideoByIdList(videoIdList);
+            return  R.ok().message("视频删除成功");
+        } catch (Exception e) {
+            log.error(ExceptionUtils.getMessage(e));
+            throw new MyException(ResultCodeEnum.VIDEO_DELETE_ALIYUN_ERROR);
+        }
+    }
+
+
+
 }

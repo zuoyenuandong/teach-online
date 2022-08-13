@@ -5,6 +5,7 @@ import com.kuang.common.base.result.R;
 import com.kuang.service.edu.entity.Chapter;
 import com.kuang.service.edu.entity.ov.ChapterVo;
 import com.kuang.service.edu.service.ChapterService;
+import com.kuang.service.edu.service.VideoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -21,13 +22,16 @@ import java.util.List;
  * @author Kuang
  * @since 2022-08-03
  */
-@CrossOrigin
+
 @RestController
 @RequestMapping("/admin/edu/chapter")
 @Api(description ="章节管理")
 public class ChapterController {
     @Autowired
     private ChapterService chapterService;
+
+    @Autowired
+    private VideoService videoService;
 
 
     @ApiOperation("新增章节")
@@ -77,9 +81,9 @@ public class ChapterController {
             @ApiParam(value = "章节ID", required = true)
             @PathVariable String id){
 
-        //TODO: 删除课程视频
-        //此处调用vod中的删除视频文件的接口
 
+        //此处调用vod中的删除视频文件的接口
+        videoService.removeVideoByChapterId(id);
         //删除章节
         boolean result = chapterService.removeChapterById(id);
         if(result){

@@ -1,12 +1,13 @@
 package com.kuang.service.edu.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.kuang.service.base.dto.CourseDto;
 import com.kuang.service.edu.entity.Course;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.kuang.service.edu.entity.form.CourseInfoForm;
-import com.kuang.service.edu.entity.ov.CoursePublishVo;
-import com.kuang.service.edu.entity.ov.CourseQueryVo;
-import com.kuang.service.edu.entity.ov.CourseVo;
+import com.kuang.service.edu.entity.ov.*;
+
+import java.util.List;
 
 /**
  * <p>
@@ -34,4 +35,14 @@ public interface CourseService extends IService<Course> {
     CoursePublishVo getCoursePublishById(String id);
 
     boolean publishCourseById(String id);
+
+    List<Course> webSelectList(WebCourseQueryVo webCourseQueryVo);
+
+    WebCourseVo selectWebCourseVoById(String id);
+
+    List<Course> selectHotCourse();
+
+    CourseDto getCourseDtoById(String courseId);
+
+    void updateBuyCountById(String id);
 }

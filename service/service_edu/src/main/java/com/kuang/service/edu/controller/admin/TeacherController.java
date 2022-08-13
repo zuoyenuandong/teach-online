@@ -24,7 +24,7 @@ import java.util.List;
  * @author Kuang
  * @since 2022-08-03
  */
-    @CrossOrigin
+
     @RestController
     @RequestMapping("/admin/edu/teacher")
     @Api(description ="讲师后台管理系统")

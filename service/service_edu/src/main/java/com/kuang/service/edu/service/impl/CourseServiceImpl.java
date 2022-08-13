@@ -4,11 +4,10 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.kuang.common.base.result.R;
+import com.kuang.service.base.dto.CourseDto;
 import com.kuang.service.edu.entity.*;
 import com.kuang.service.edu.entity.form.CourseInfoForm;
-import com.kuang.service.edu.entity.ov.CoursePublishVo;
-import com.kuang.service.edu.entity.ov.CourseQueryVo;
-import com.kuang.service.edu.entity.ov.CourseVo;
+import com.kuang.service.edu.entity.ov.*;
 import com.kuang.service.edu.feign.OssFileService;
 import com.kuang.service.edu.mapper.*;
 import com.kuang.service.edu.service.CourseService;
@@ -16,6 +15,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -182,5 +182,62 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         return this.updateById(course);
     }
 
+    @Override
+    public List<Course> webSelectList(WebCourseQueryVo webCourseQueryVo) {
+        QueryWrapper<Course> courseQueryWrapper = new QueryWrapper<>();
+        courseQueryWrapper.eq("status",Course.COURSE_NORMAL);
 
+        if (!StringUtils.isEmpty(webCourseQueryVo.getSubjectParentId())) {
+            courseQueryWrapper.eq("subject_parent_id", webCourseQueryVo.getSubjectParentId());
+        }
+
+        if (!StringUtils.isEmpty(webCourseQueryVo.getSubjectId())) {
+            courseQueryWrapper.eq("subject_id", webCourseQueryVo.getSubjectId());
+        }
+
+        if (!StringUtils.isEmpty(webCourseQueryVo.getBuyCountSort())) {
+            courseQueryWrapper.orderByDesc("buy_count");
+        }
+
+        if (!StringUtils.isEmpty(webCourseQueryVo.getGmtCreateSort())) {
+            courseQueryWrapper.orderByDesc("gmt_create");
+        }
+
+        if (!StringUtils.isEmpty(webCourseQueryVo.getPriceSort())) {
+            courseQueryWrapper.orderByDesc("price");
+        }
+
+        return baseMapper.selectList(courseQueryWrapper);
+    }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public WebCourseVo selectWebCourseVoById(String id) {
+        Course course = baseMapper.selectById(id);
+
+        course.setVersion(course.getViewCount()+1);
+        baseMapper.updateById(course);
+
+        return baseMapper.selectWebCourseVoById(id);
+    }
+    @Cacheable(value = "index",key = "'selectHotCourse'")
+    @Override
+    public List<Course> selectHotCourse() {
+        QueryWrapper<Course> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByDesc("view_count");
+        queryWrapper.last("limit 8");
+        return baseMapper.selectList(queryWrapper);
+    }
+
+    @Override
+    public CourseDto getCourseDtoById(String courseId) {
+        return baseMapper.selectCourseDtoById(courseId);
+    }
+
+    @Override
+    public void updateBuyCountById(String id) {
+        Course course = baseMapper.selectById(id);
+        course.setBuyCount(course.getBuyCount() + 1);
+        this.updateById(course);
+    }
 }

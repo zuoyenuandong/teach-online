@@ -9,6 +9,7 @@
     <modules>
         <module>common</module>
         <module>service</module>
+        <module>infrastructure</module>
     </modules>
     <name>teach_online_parent</name>
     <description>the parent of the project</description>

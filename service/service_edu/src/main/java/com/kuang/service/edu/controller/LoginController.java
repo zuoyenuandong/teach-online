@@ -4,7 +4,7 @@ import com.kuang.common.base.result.R;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin
+
 @RestController
 @RequestMapping("/user")
 public class LoginController {
