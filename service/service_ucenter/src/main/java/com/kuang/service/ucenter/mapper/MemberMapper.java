@@ -12,5 +12,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @since 2022-08-10
  */
 public interface MemberMapper extends BaseMapper<Member> {
-
+    Integer selectRegisterNumByDay(String day);
 }

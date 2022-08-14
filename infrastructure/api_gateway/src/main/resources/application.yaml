@@ -45,3 +45,7 @@ spring:
           uri: lb://service-vod
           predicates:
             - Path=/*/vod/**
+        - id: service-statistics
+          uri: lb://service-statistics
+          predicates:
+            - Path=/*/statistics/**
